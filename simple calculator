@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,y,sum,sub,mult;
+    float div,rem;
+    char op;
+    cout<<"Enter first number"<<endl;
+    cin>>x;
+    cout<<"Enter the operator(e.g.:+,-,*,/)"<<endl;
+    cin>>op;
+    cout<<"Enter second number"<<endl;
+    cin>>y;
+    sum=x+y;
+    sub=x-y;
+    mult=x*y;
+    div=x/y;
+    rem=x%y;
+
+    if(op=='+')
+    {
+        cout<<"Sum = "<<sum<<endl;
+    }
+    else if(op=='-')
+    {
+        cout<<"Subtract = "<<sub<<endl;
+    }
+    else if(op=='*')
+    {
+        cout<<"Product = "<<mult<<endl;
+    }
+    else if(op=='/')
+    {
+            cout<<"Division = "<<div<<endl;
+            cout<<"Remainder = "<<rem<<endl;
+    }
+    else
+    {
+        cout<<"Invalid input!"<<endl;
+    }
+    return 0;
+}
