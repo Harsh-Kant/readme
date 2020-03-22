@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char grade;
+    cout << "Enter the grade (e.g. S,A,B,C,D,E)" << endl;
+    cin>>grade;
+    switch(grade)
+    {
+        case 'S':cout<<"Unpossible";
+        break;
+        case 'A':cout<<"Failed";
+        break;
+        case 'B':cout<<"You passed";
+        break;
+        case 'C':cout<<"Good";
+        break;
+        case 'D':cout<<"Very Good";
+        break;
+        case 'E':cout<<"Excellent";
+        break;
+        default:cout<<"Invalid entry";
+        break;
+    }
+    return 0;
+}
