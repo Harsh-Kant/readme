@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char r,a,i,n,b,o,w;
+    cout<<endl<<"Enter the first letter: ";
+    cin>>r;
+    cout<<endl<<"Enter the second letter: ";
+    cin>>a;
+    cout<<endl<<"Enter the third letter: ";
+    cin>>i;
+    cout<<endl<<"Enter the fourth letter: ";
+    cin>>n;
+    cout<<endl<<"Enter the fifth letter: ";
+    cin>>b;
+    cout<<endl<<"Enter the sixth letter: ";
+    cin>>o;
+    cout<<endl<<"Enter the seventh letter: ";
+    cin>>w;
+    if((r=='R')&&(a=='A')&&(i=='I')&&(n=='N')&&(b=='B')&&(o=='O')&&(w=='W'))
+    {
+        cout<<endl<<"RAINBOW";
+    }
+    else
+    {
+        cout<<"The spelling is wrong";
+    }
+    return 0;
+}
