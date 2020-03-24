@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float grade;
+    cout<<"Enter the grade point: ";
+    cin>>grade;
+    if(grade==5)
+    {
+        cout<<"Grade : O";
+    }
+    else if((grade>=4.5)&&(grade<5.0))
+    {
+        cout<<"Grade : A";
+    }
+    else if((grade>=4.0)&&(grade<4.5))
+    {
+        cout<<"Grade : B";
+    }
+    else if((grade>=3.0)&&(grade<4.0))
+    {
+        cout<<"Grade : C";
+    }
+    else if((grade>=2.0)&&(grade<3.0))
+    {
+        cout<<"Grade : D";
+    }
+    else if((grade>=1.0)&&(grade<2.0))
+    {
+        cout<<"Grade : E";
+    }
+    else if((grade>=0.0)&&(grade<1.0))
+    {
+        cout<<"Grade : F";
+    }
+
+    return 0;
+}
