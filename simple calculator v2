@@ -1,0 +1,53 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    double x,y;
+    char op,again;
+
+    do
+    {
+        cout<<endl<<"Enter the first number"<<endl;
+        cin>>x;
+
+        cout<<endl<<"Enter the operator(e.g. +,-,*,/)"<<endl;
+        cin>>op;
+
+        cout<<endl<<"Enter the second number"<<endl;
+        cin>>y;
+        switch(op)
+        {
+            case '+':cout<<endl<<"Sum = "<<x+y<<endl<<endl<<endl;
+            break;
+
+            case '-':cout<<endl<<"Difference = "<<x-y<<endl<<endl<<endl;
+            break;
+
+            case '*':cout<<endl<<"Product = "<<x*y<<endl<<endl<<endl;
+            break;
+
+            case '/':
+                if(y==0)
+                {
+                    cout<<endl<<"Invalid input! Denominator can not be zero"<<endl<<endl<<endl;
+                }
+                else
+                {
+                    cout<<endl<<"Division = "<<x/y<<endl<<endl<<endl;
+                }
+                break;
+
+            default : cout<<"Invalid input"<<endl<<endl<<endl;
+            break;
+        }
+
+        cout<<"Enter r or R to calculate again"<<endl<<"Any other to exit"<<endl;
+        cin>>again;
+
+    }while((again=='r')||(again=='R'));
+
+    return 0;
+}
