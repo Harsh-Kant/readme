@@ -22,7 +22,7 @@ int main()
     }
     else
     {
-        cout<<"Invalid input!";
+        cout<<"Invalid year!";
     }
     return 0;
 }
