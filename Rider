@@ -1,0 +1,54 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int n;
+	cout<<"Enter the distance ";
+	cin>>n;
+	int rev = 0;
+   if(n<0)
+   {
+       cout<<endl<<"Invalid Input";
+   }
+   else
+   {
+       while (n != 0) {
+        rev = (rev * 10) + (n % 10);
+        n /= 10;
+    }
+
+	n = rev;
+	int proO=1,proE=1,c=1;
+
+	while (n != 0)
+    {
+		if (c % 2 == 0)
+			{
+			    proE =proE * (n % 10);
+			}
+		else
+			{
+			    proO =proO * (n % 10);
+			}
+		n /= 10;
+		c++;
+	}
+
+	if(proO==proE)
+    {
+        cout<<endl<<"Your bonus point is "<<proO+proE;
+    }
+    else if(proO>proE)
+    {
+        cout<<endl<<"Your bonus point is "<<proO;
+    }
+    else if(proO<proE)
+    {
+        cout<<endl<<"Your bonus point is "<<proE;
+    }
+   }
+
+	return 0;
+}
