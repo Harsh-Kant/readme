@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int car,num,sum=0;
+    cout<<"Enter the car number ";
+    cin>>car;
+    num=car;
+   if((num/1000==0)||(num/10000!=0))
+   {
+       cout<<endl<<car<<" is not a valid car number";
+   }
+   else
+   {
+       while(num!=0)
+    {
+        sum=sum+num%10;
+        num=num/10;
+    }
+    if((sum%3==0)||(sum%5==0)||(sum%7==0))
+    {
+        cout<<endl<<"Lucky Number";
+    }
+    else
+    {
+        cout<<endl<<"Sorry it's not my lucky number";
+    }
+   }
+    return 0;
+}
